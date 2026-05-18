@@ -1,5 +1,5 @@
 {
-  "name": "@caffeine/template-app",
+  "name": "@alexpiku/template-app",
   "type": "module",
   "engines": {
     "node": ">=16.0.0",
@@ -11,12 +11,12 @@
     "typecheck": "pnpm -r --if-present run typecheck",
     "check": "pnpm -r --if-present run check",
     "fix": "pnpm -r --if-present run fix",
-    "bindgen": "caffeine-bindgen --did-file ./src/backend/dist/backend.did --out-dir ./src/frontend/src --actor-interface-file --force"
+    "bindgen": "alexpiku-bindgen --did-file ./src/backend/dist/backend.did --out-dir ./src/frontend/src --actor-interface-file --force"
   },
   "devDependencies": {
     "sharp": "^0.34.4"
   },
   "dependencies": {
-    "@caffeineai/core-infrastructure": "^0.3.0"
+    "@alexpiku/core-infrastructure": "^0.3.0"
   }
 }
