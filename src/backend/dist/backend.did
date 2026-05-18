@@ -1,0 +1,20 @@
+type SocialLink = 
+ record {
+   cta: text;
+   description: text;
+   href: text;
+   id: text;
+   title: text;
+ };
+type SiteData = 
+ record {
+   bio: text;
+   contactEmail: text;
+   links: vec SocialLink;
+ };
+service : {
+  claimOwnership: () -> (bool);
+  getSiteData: () -> (SiteData) query;
+  isOwner: () -> (bool) query;
+  setSiteData: (data: SiteData) -> ();
+}

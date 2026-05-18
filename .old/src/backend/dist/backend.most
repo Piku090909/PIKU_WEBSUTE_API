@@ -1,0 +1,8 @@
+// Version: 1.0.0
+type SiteData__320510082 =
+  {bio : Text; contactEmail : Text; links : [SocialLink__998484077]};
+type SocialLink__998484077 =
+  {cta : Text; description : Text; href : Text; id : Text; title : Text};
+actor {
+  stable state : {var owner : ?Principal; var siteData : SiteData__320510082}
+};
